@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Random Numbers</h1>
+
+    <script>
+        var foods = ['cheese', 'chicken', 'pie', 'fruit'];
+
+
+
+        function randomInt(min, max) {
+
+            var numOfValues = max - min + 1;
+            var randomNum = Math.random();
+            var randomValue = randomNum * numOfValues;
+
+
+            // Math.floor() is to round up!
+            var rounded = Math.floor(randomValue);
+            var final = min + rounded;
+
+            return final;
+
+        }
+
+
+            console.log( foods[random(0,3)]);
+
+          
+          
+          //or
+          
+          
+          function randomInt(min, max) {
+            
+            var final = min + Math.floor(Math.random() * max - min + 1);
+
+            return final;
+
+        }
+
+        console.log(foods[randomInt(0, 3)]);
+
+
+    </script>
+
+</body>
+
+</html>

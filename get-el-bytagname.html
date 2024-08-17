@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Get element by ID</h1>
+    
+    <p> meow</p>
+    <p> meow1</p>
+    <p> meow2</p>
+    <p> meow3</p>
+
+
+
+    <script>
+        // will give us an html collection.
+        var phrargrraphs = document.getElementsByTagName('p');
+
+        for (let i = 0; i < phrargrraphs.length; i++) {
+            phrargrraphs[i].style.color = 'red';
+
+            //we can use alret to 
+alert(`this is element ${i}`);
+            
+        }
+        console.log(phrargrraphs);
+        //for this to set the color, we need to use a loop.
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Get element by Class name</h1>
+    
+    <p class="special"> meow</p>
+    <p> meow1</p>
+    <p> meow2</p>
+    <p> meow3</p>
+
+    <script>
+        var classname = document.getElementsByClassName('special');
+
+        for (let i = 0; i < classname.length; i++) {
+           classname[i].style.color = 'red';
+            
+        }
+    </script>
+
+</body>
+</html>

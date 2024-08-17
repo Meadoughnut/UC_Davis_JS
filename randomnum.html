@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Generating random numbers</h1>
+    <script>
+        // this will log numbers 0-1 not including 1.
+        //console.log(Math.random());
+
+
+
+
+        function randomInt (min, max) {
+
+            var numOfValues = max - min + 1;
+            var randomNum = Math.random();
+            var randomValue = randomNum * numOfValues;
+           
+
+            // Math.floor() is to round up!
+            var rounded = Math.floor(randomValue);
+            var final = min + rounded;
+
+
+           console.log(final);
+
+            
+        }
+
+        randomInt(5, 10);
+
+
+    </script>
+</body>
+</html>

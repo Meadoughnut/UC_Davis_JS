@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+</head>
+
+<body>
+    <div id="special">
+
+        <p> meow</p>
+        <p> meow</p>
+        <p> meow</p>
+    </div>
+    <div>
+        <p> meow</p>
+
+    </div>
+
+
+    <script>
+
+        var txt = document.querySelectorAll("#special p");
+        for (var i = 0; i < txt.length; i++) {
+            txt[i].style.color = "red";
+        }
+
+    </script>
+
+
+</body>
+
+</html>

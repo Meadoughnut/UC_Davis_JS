@@ -1,0 +1,2 @@
+//strings treated as an array.
+
