@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Never use a global scope</title>
+</head>
+<body>
+
+
+
+    <script>
+        //IIEF
+        //this is called the an immediate invoked function
+        //whic is i don't have to call the function on the bottom at the line 22 because it is already invoked by using the function inside of the paranthesis.
+
+        //So this is the technique to avoid the mistake abt the global and local scope function
+
+
+        //Please check themdn IIFE on theMDN
+        (function dostuff(){
+            var myPs = document.querySelectorAll('p');
+
+            for (var i=0; i<myPs.length; i++){
+                myPs[i].style.color = "red";
+            }
+
+        }());
+
+    </script>
+    
+</body>
+</html>
